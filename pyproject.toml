@@ -1,18 +1,30 @@
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools>=61", "wheel"]
 build-backend = "setuptools.build_meta"
 
-[tool.poetry]
-name = "pythonfacebook"
-version = "0.1.0"
+[project]
+name = "python-facebook-lite"
+version = "0.1.2"
 description = "A simple Facebook interaction library."
-authors = ["Vlad Andrei contact@vlad.my"]
+authors = [
+  { name = "Vlad Andrei", email = "contact@vlad.my" }
+]
 license = "MIT"
-homepage = "https://github.com/vladmycode/pythonfacebook"
-repository = "https://github.com/vladmycode/pythonfacebook"
+requires-python = ">=3.8"
+dependencies = [
+  "requests"
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://github.com/vladmycode/pythonfacebook"
+Repository = "https://github.com/vladmycode/pythonfacebook"
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
 [tool.setuptools]
-include_package_data = true
+include-package-data = true
