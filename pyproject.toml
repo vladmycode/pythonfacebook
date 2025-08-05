@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "python-facebook-lite"
-version = "0.1.2"
+version = "0.1.3"
 description = "A simple Facebook interaction library."
 authors = [
   { name = "Vlad Andrei", email = "contact@vlad.my" }
